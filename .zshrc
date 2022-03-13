@@ -1,7 +1,3 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# export PATH="/Users/okazaki/anaconda3/bin:$PATH"  # commented out by conda initialize
-
 # 日本語を使用
 export LANG=ja_JP.UTF-8
 
@@ -137,22 +133,4 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
-
-
-export MECABRC="/usr/local/etc/mecabrc"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/okazaki/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/okazaki/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/okazaki/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/okazaki/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+#export MECABRC="/usr/local/etc/mecabrc"
